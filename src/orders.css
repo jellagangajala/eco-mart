@@ -1,0 +1,159 @@
+/* orders.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: aqua;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+.toggle-mode {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.toggle-mode button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: pink;
+  color: aqua;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-mode button:hover {
+  background: violet;
+  color: #000;
+}
+
+.order-list {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.no-orders {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #999;
+  margin-top: 100px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+body.dark .order-card {
+  background: #1e1e2f;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+}
+
+.order-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #7b1fa2;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+}
+
+.status.delivered {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-color: #a5d6a7;
+}
+
+.status.pending {
+  background: #fff3e0;
+  color: aqua;
+  border-color: #ffcc80;
+}
+
+.order-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.order-card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.order-card li {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.qr-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.qr-download canvas {
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.qr-download button {
+  background: linear-gradient(to right, #826190, pink);
+  border: none;
+  color: pink;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.qr-download button:hover {
+  background: linear-gradient(to right, #ff9800, #7b1fa2);
+  transform: scale(1.03);
+}
+
+body.dark .qr-download button {
+  background: linear-gradient(to right, #bb86fc, #ffb74d);
+  color: #121212;
+}
+
+body.dark .qr-download button:hover {
+  background: linear-gradient(to right, #ffb74d, #bb86fc);
+  color: #000;
+}

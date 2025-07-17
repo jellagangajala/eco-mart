@@ -1,0 +1,58 @@
+/* App.css */
+
+.navbar {
+  display: flex;
+  gap: 25px; /* Space between links */
+  padding: 12px 25px;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px; /* Smaller font size */
+  font-weight: bold;
+  flex-wrap: nowrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+/* Individual link colors */
+.navbar .home {
+  color: orangered;
+}
+.navbar .veg {
+  color: green;
+}
+.navbar .nonveg {
+  color: blue;
+}
+.navbar .milk {
+  color: orange;
+}
+.navbar .cart {
+  color: blueviolet;
+}
+.navbar .orders {
+  color: palevioletred;
+}
+.navbar .about {
+  color: violet;
+}
+.navbar .contact {
+  color: teal;
+}
+.navbar .login {
+  color: goldenrod;
+}
+.navbar .register {
+  color: gray;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background-color: black;
+  color: white !important;
+}
